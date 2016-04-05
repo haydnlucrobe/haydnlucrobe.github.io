@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic)
+
+body
+    font-family: 'Open Sans', sans-serif
+    overflow-x: hidden
+    padding: 0
+    margin: 0
+
+    .section-header
+        //background-color: grey
+        max-width: 720px
+        margin: 0 auto
+        text-align: center
+        padding-bottom: 10px
+        .logo
+            width: 150px
+            margin-top: 40px
+            border-radius: 75px
+        .tagline
+            margin-top: 10px
+            line-height: 1.1
+            padding-bottom: 10px
+            font-weight: 600
+            font-size: 18px
+
+    .section-upcomingShow
+        background: lighten(#dddddd, 9%)
+        width: 120%
+        margin-left: -10%
+        margin-top: -1%
+        transform: rotate(-3deg)
+        position: absolute
+        z-index: -100
+        text-align: center
+        height: 380px
+
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            z-index: -101
+            top: 80%
+            background: lighten(#dddddd, 9%)
+            height: 150px
+            width: 100%
+            transform: rotate(5deg)
+        .content
+            padding-top: 30px
+            transform: rotate(3deg)
+            max-width: 720px
+            margin: 0 auto
+            h2
+                margin-top: 0px
+                margin-bottom: 0px
+                font-size: 18px
+            h3
+                margin-top: -5px
+                font-size: 32px
+            .showContent
+                display: flex
+                align-items: center
+
+                img
+                    width: 200px
+                .copy
+                    text-align: Justify
+                    margin-left: 50px
+                    h5
+                        margin: 0
+                        font-size: 16px
+                    p
+                        margin: 0
+                        font-size: 14px
+                        margin-bottom: 15px
+
+                    a.tickets
+                        background: darken(lightblue, 30%)
+                        padding: 5px 10px
+                        color: white
+                        font-weight: 700
+                        text-decoration: none
+                        transition: background ease-in-out 0.3s
+                        &:hover
+                            background: darken(lightblue, 35%)
