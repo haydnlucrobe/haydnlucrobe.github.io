@@ -82,3 +82,9 @@ body
                         transition: background ease-in-out 0.3s
                         &:hover
                             background: darken(lightblue, 35%)
+
+@-moz-document url-prefix()
+    /* Firefox doesn't respect max-width in certain situations */
+    img.flyer
+        width: 200px
+        max-width: -moz-max-content
